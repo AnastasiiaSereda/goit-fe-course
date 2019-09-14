@@ -39,9 +39,6 @@ img {
   min-height: 86px;
 }
 
-.page-nav {
-  padding: 0 36px;
-}
 
 .main-title {
   padding: 36px 0;
@@ -95,7 +92,9 @@ img {
   color: #1abc9c;
 }
 
-
+.features {
+  padding-top: 110px;
+}
 
 .features-title {
   font-size: 48px;
@@ -104,8 +103,8 @@ img {
   font-family: "Roboto";
   font-weight: 900;
   text-align: center;
-  padding-top: 110px;
   text-transform: uppercase;
+  margin-bottom: 92px;
 }
 
 h2::after {
@@ -116,7 +115,7 @@ h2::after {
   content: "";
   margin: 0 auto;
   margin-top: 32px;
-  margin-bottom: 92px;
+
 }
 
 .features-list {
@@ -128,7 +127,7 @@ h2::after {
   width: 254px;
   margin-right: 30px;
   margin-bottom: 30px;
-  height: 312px;
+  height: 322px;
 }
 
 .features-list-item:nth-child(4n) {
@@ -139,6 +138,11 @@ h2::after {
   margin-bottom: 0;
 }
 
+.news {
+  padding-top: 110px;
+  padding-bottom: 80px;
+}
+
 .news-title {
   font-size: 48px;
   line-height: 58px;
@@ -146,8 +150,8 @@ h2::after {
   font-family: "Roboto";
   font-weight: 900;
   text-align: center;
-  padding-top: 110px;
   text-transform: uppercase;
+  margin-bottom: 80px;
 }
 
 .news-list {
@@ -158,8 +162,7 @@ h2::after {
   float: left;
   width: 350px;
   margin-right: 30px;
-  margin-bottom: 16px;
-  height: 262px;
+  min-height: 262px;
 }
 
 .news-list-item:nth-child(3n) {
@@ -214,7 +217,6 @@ h3.news-list-description::after {
 .read {
   text-align: left;
   margin-top: 18px;
-  margin-bottom: 80px;
 }
 
 .product-price {
