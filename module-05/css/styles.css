@@ -1,0 +1,265 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto""Open Sans", sans-serif;
+  color: #515151;
+  font-size: 18px;
+  line-height: 32px;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.clearfix::after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.page-header {
+  min-height: 86px;
+}
+
+.main-title {
+  padding: 36px 0;
+  font-size: 30px;
+  line-height: 32px;
+  color: #0f0101;
+  font-family: "Roboto";
+  font-weight: 200;
+  float: left;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-title::first-letter {
+  color: #1abc9c;
+  font-weight: 900;
+}
+
+.site-navigation {
+  float: right;
+  width: 480px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 40px;
+}
+
+.site-navigation li {
+  float: left;
+  margin-right: 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.site-navigation li:last-child {
+  margin-right: 0;
+}
+
+.site-navigation a {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  color: #0f0101;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #1abc9c;
+}
+
+.background {
+  background-color: #e9f0fd;
+}
+
+.wrapper {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+.slider {
+  position: relative;
+  margin: auto;
+  box-shadow: #1abc9c;
+}
+
+.slider-ctrl {
+  position: absolute;
+  display: inline-block;
+  border: none;
+  width: 104px;
+  height: 104px;
+  opacity: 0.8;
+  background-color: #1abc9c;
+  top: 260px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.slider-ctrl-prev {
+  left: 15%;
+}
+
+.slider-ctrl-next {
+  right: 15%;
+}
+
+.slides {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slides-image {
+  min-height: 600px;
+}
+
+.slides-item {
+  position: relative;
+  list-style: none;
+}
+
+.slides-description {
+  position: absolute;
+}
+
+.slides-title {
+  top: 224px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 740px;
+  height: 46px;
+  font-size: 60px;
+  line-height: 82px;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.offers {
+  top: 300px;
+  left: 41%;
+  transform: translate(-50%, -50%);
+  width: 460px;
+  height: 22px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.collection {
+  padding-top: 100px;
+}
+
+.new-collection {
+  font-size: 48px;
+  line-height: 58px;
+  color: #515151;
+  font-family: "Roboto";
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 92px;
+}
+
+h2::after {
+  display: block;
+  width: 162px;
+  height: 7px;
+  background-color: #1abc9c;
+  content: "";
+  margin: 0 auto;
+  margin-top: 32px;
+}
+
+.collection-list {
+  list-style: none;
+}
+
+.collection-list-item {
+  float: left;
+  width: 254px;
+  margin-right: 30px;
+  height: 322px;
+}
+
+.collection-list-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.collection-list-item:nth-last-child(-n + 4) {
+  margin-bottom: 100px;
+}
+
+.product-price {
+  margin: 0 auto;
+  float: right;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 32px;
+  width: 55px;
+  height: 40px;
+  background-color: #8c8c8c;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.product-description {
+  margin: 0 auto;
+  float: left;
+  width: 199px;
+  height: 40px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 40px;
+  padding-left: 14px;
+  background-color: #323232;
+  text-transform: uppercase;
+}
+
+.collection-list-item:hover .product-description {
+  background-color: #1abc9c;
+}
+
+.collection-list-item:hover .product-price {
+  background-color: #7fd9c7;
+}
+
+.page-footer {
+  background-color: #323232;
+  padding-top: 40px;
+  padding-bottom: 34px;
+}
+
+.text {
+  text-transform: capitalize;
+  color: white;
+  text-align: center;
+}
