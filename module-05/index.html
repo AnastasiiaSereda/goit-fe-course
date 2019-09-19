@@ -33,11 +33,12 @@
                 <button class="slider-ctrl slider-ctrl-next"></button>
                 <ul class="slides clearfix">
                     <li class="slides-item">
+                        <div class="overlay main-image"></div>
 
 
-                        <img class="slides-image" src="./img/img5.5.jpg" alt="Девушки">
+                        <img class="slides-image" src="./img/img5.5.jpg" width="1600" height="600" alt="Девушки">
 
-                        
+
                         <p class="slides-description slides-title">Afordable Paris tours</p>
                         <p class="slides-description offers">City tours/Tour tickets/Tour guides</p>
                     </li>
@@ -53,9 +54,21 @@
                     <span class="product-price">$26</span>
                 </li>
                 <li class="collection-list-item">
-                    <img class="collection-list-image" src="./img/img5.2.jpg" width="254" height="280" alt="" />
-                    <h3 class="product-description">Women shirt</h3>
-                    <span class="product-price">$31</span>
+                    <div class="card">
+                        <div class="overlay">
+
+                            <span class="overlay-icon first"></span>
+                            <span class="overlay-icon second"></span>
+                            <span class="overlay-icon third"></span>
+
+                            <span class="overlay-icon fourth">
+                                <div class="words">Add to cart</div>
+                            </span>
+                        </div>
+                        <img class="collection-list-image" src="./img/img5.2.jpg" width="254" height="280" alt="" />
+                        <h3 class="product-description">Women shirt</h3>
+                        <span class="product-price">$31</span>
+                    </div>
                 </li>
                 <li class="collection-list-item">
                     <img class="collection-list-image" src="./img/img5.3.jpg" width="254" height="280" alt="" />
@@ -71,7 +84,8 @@
         </section>
     </main>
     <footer class="page-footer wrapper">
-        <div class="text"> All rights reserved &#127279 Dokan | Designed ThemenGraph </div>
+        <div class="text"> All rights reserved &#169 Dokan | Designed <span class="colortext">ThemenGraph</span>
+        </div>
     </footer>
 </body>
 

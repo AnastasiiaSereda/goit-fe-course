@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: "Roboto""Open Sans", sans-serif;
+  font-family: "Roboto" "Open Sans", sans-serif;
   color: #515151;
   font-size: 18px;
   line-height: 32px;
@@ -117,14 +117,18 @@ img {
   top: 260px;
   transform: translateY(-50%);
   z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .slider-ctrl-prev {
   left: 15%;
+  background-image: url("../icons/left.png");
 }
 
 .slider-ctrl-next {
   right: 15%;
+  background-image: url("../icons/right.png");
 }
 
 .slides {
@@ -136,6 +140,23 @@ img {
 .slides-image {
   min-height: 600px;
 }
+
+/*.slides-item {
+  position: relative;
+  width: 1600px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000002;
+  opacity: 0;
+}
+.slides-item:hover .overlay {
+  opacity: 0.6;
+}
+*/
 
 .slides-item {
   position: relative;
@@ -218,6 +239,85 @@ h2::after {
   margin-bottom: 100px;
 }
 
+.card {
+  position: relative;
+  width: 256px;
+}
+
+.overlay {
+  position: absolute;
+  width: 236px;
+  height: 260px;
+  background-color: #585555;
+  opacity: 0;
+  top: 10px;
+  left: 10px;
+}
+.overlay-icon {
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #585555;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.first {
+  top: 78px;
+  left: 34px;
+  border: 1px solid;
+  border-radius: 1px;
+  border-color: #ffffff;
+  background-image: url("../icons/heart.png");
+}
+
+.second {
+  top: 78px;
+  left: 93px;
+  background-color: #1abc9c;
+  background-image: url("../icons/track.png");
+}
+
+.third {
+  top: 78px;
+  right: 34px;
+  border: 1px solid;
+  border-radius: 1px;
+  border-color: #ffffff;
+  background-image: url("../icons/clock.png");
+}
+
+.fourth {
+  padding-top: 16px;
+  padding-right: 18px;
+  width: 168px;
+  height: 50px;
+  top: 136px;
+  left: 34px;
+  background-color: #2e2c2c;
+  opacity: 1;
+  border: 1px solid;
+  border-radius: 1px;
+  border-color: #ffffff;
+  background-image: url("../icons/curt.png");
+  background-position-x: left;
+}
+
+.words {
+  float: right;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+.card:hover .overlay {
+  opacity: 0.8;
+}
+
 .product-price {
   margin: 0 auto;
   float: right;
@@ -262,4 +362,7 @@ h2::after {
   text-transform: capitalize;
   color: white;
   text-align: center;
+}
+.colortext {
+  color: #46bfa9;
 }
