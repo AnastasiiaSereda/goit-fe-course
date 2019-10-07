@@ -95,11 +95,6 @@ img {
   background-color: #e9f0fd;
 }
 
-.wrapper {
-  width: 1600px;
-  margin: 0 auto;
-}
-
 .slider {
   position: relative;
   margin: auto;
@@ -121,6 +116,10 @@ img {
   background-position: center;
 }
 
+.slides-description {
+  z-index: 10;
+}
+
 .slider-ctrl-prev {
   left: 15%;
   background-image: url("../icons/left.png");
@@ -138,25 +137,27 @@ img {
 }
 
 .slides-image {
-  min-height: 600px;
+  display: block;
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 
-/*.slides-item {
+.slides-item {
   position: relative;
-  width: 1600px;
 }
 
-.overlay {
+.overlay:before {
+  content: "";
+  display: block;
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: #000002;
-  opacity: 0;
+  opacity: 0.52;
+  z-index: 1;
 }
-.slides-item:hover .overlay {
-  opacity: 0.6;
-}
-*/
 
 .slides-item {
   position: relative;
@@ -228,7 +229,6 @@ h2::after {
   float: left;
   width: 254px;
   margin-right: 30px;
-  height: 322px;
 }
 
 .collection-list-item:nth-child(4n) {
@@ -241,26 +241,30 @@ h2::after {
 
 .card {
   position: relative;
-  width: 256px;
 }
 
-.overlay {
+.collection-list-image {
+  filter: brightness(0, 0, 55, 0.55);
+}
+
+.card-overlay {
   position: absolute;
-  width: 236px;
-  height: 260px;
-  background-color: #585555;
+  background-color: rgba(88, 85, 85, 0.85);
   opacity: 0;
   top: 10px;
   left: 10px;
+  bottom: 10px;
+  right: 10px;
 }
+
 .overlay-icon {
   position: absolute;
   display: inline-block;
   width: 50px;
   height: 50px;
-  background-color: #585555;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: transparent;
 }
 
 .first {
@@ -275,6 +279,7 @@ h2::after {
 .second {
   top: 78px;
   left: 93px;
+  border-color: #1abc9c;
   background-color: #1abc9c;
   background-image: url("../icons/track.png");
 }
@@ -289,7 +294,7 @@ h2::after {
 }
 
 .fourth {
-  padding-top: 16px;
+  padding-top: 6px;
   padding-right: 18px;
   width: 168px;
   height: 50px;
@@ -314,8 +319,8 @@ h2::after {
   font-weight: 400;
 }
 
-.card:hover .overlay {
-  opacity: 0.8;
+.card:hover .card-overlay {
+  opacity: 1;
 }
 
 .product-price {
@@ -342,6 +347,7 @@ h2::after {
   padding-left: 14px;
   background-color: #323232;
   text-transform: uppercase;
+  font-family: "Roboto";
 }
 
 .collection-list-item:hover .product-description {
@@ -363,6 +369,8 @@ h2::after {
   color: white;
   text-align: center;
 }
+
 .colortext {
   color: #46bfa9;
+  text-decoration: none;
 }

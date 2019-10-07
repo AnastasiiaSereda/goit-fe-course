@@ -13,7 +13,8 @@
 
 <body>
     <header class="page-header">
-        <nav class="page-nav container clearfix">
+        <div class="container">
+        <nav class="page-nav  clearfix">
             <a href="#" class="main-title">Mart</a>
             <ul class="site-navigation clearfix">
                 <li><a href="#">Home</a></li>
@@ -24,27 +25,29 @@
                 <li><a href="#">Contact us</a></li>
             </ul>
         </nav>
+        </div>
     </header>
-
-    <main class="background wrapper">
-        <section class="wrapper">
-            <div class="slider">
-                <button class="slider-ctrl slider-ctrl-prev"></button>
-                <button class="slider-ctrl slider-ctrl-next"></button>
-                <ul class="slides clearfix">
-                    <li class="slides-item">
-                        <div class="overlay main-image"></div>
-
-
+    <section class="slider overlay">
+        <div class="button-wrapper container">
+            <button class="slider-ctrl slider-ctrl-prev"></button>
+            <button class="slider-ctrl slider-ctrl-next"></button>
+        </div>
+            <ul class="slides clearfix">
+                <li class="slides-item">
+                    <div class=" main-image">
                         <img class="slides-image" src="./img/img5.5.jpg" width="1600" height="600" alt="Девушки">
-
-
+                    </div>
+                    <div class="slider-content">
                         <p class="slides-description slides-title">Afordable Paris tours</p>
                         <p class="slides-description offers">City tours/Tour tickets/Tour guides</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
+                    </div>
+                    
+                </li>
+            </ul>
+    </section>
+
+    <main class="background">
+        
         <section class="collection container">
             <h2 class="new-collection">New-collection</h2>
             <ul class="collection-list clearfix">
@@ -55,15 +58,15 @@
                 </li>
                 <li class="collection-list-item">
                     <div class="card">
-                        <div class="overlay">
+                        <div class="card-overlay">
 
-                            <span class="overlay-icon first"></span>
-                            <span class="overlay-icon second"></span>
-                            <span class="overlay-icon third"></span>
+                            <button class="overlay-icon first"></button>
+                            <button class="overlay-icon second"></button>
+                            <button class="overlay-icon third"></button>
 
-                            <span class="overlay-icon fourth">
+                            <button class="overlay-icon fourth">
                                 <div class="words">Add to cart</div>
-                            </span>
+                            </button>
                         </div>
                         <img class="collection-list-image" src="./img/img5.2.jpg" width="254" height="280" alt="" />
                         <h3 class="product-description">Women shirt</h3>
@@ -83,8 +86,8 @@
             </ul>
         </section>
     </main>
-    <footer class="page-footer wrapper">
-        <div class="text"> All rights reserved &#169 Dokan | Designed <span class="colortext">ThemenGraph</span>
+    <footer class="page-footer ">
+        <div class="container"> <p class="text">All rights reserved &#169 Dokan | Designed <a href="#" class="colortext">ThemenGraph</a></p> 
         </div>
     </footer>
 </body>
