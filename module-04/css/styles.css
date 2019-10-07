@@ -37,11 +37,14 @@ img {
 
 .page-header {
   min-height: 86px;
+  padding-top: 38px;
+  padding-bottom: 102px;
 }
 
-
 .main-title {
-  padding: 36px 0;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
   font-size: 30px;
   line-height: 32px;
   color: #0f0101;
@@ -63,7 +66,6 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-top: 40px;
 }
 
 .site-navigation li {
@@ -71,6 +73,7 @@ img {
   margin-right: 32px;
   text-decoration: none;
   text-transform: uppercase;
+  padding-top: 4px;
 }
 
 .site-navigation li:last-child {
@@ -78,6 +81,7 @@ img {
 }
 
 .site-navigation a {
+  display: block;
   font-family: "Open Sans";
   font-size: 14px;
   line-height: 17px;
@@ -92,9 +96,10 @@ img {
   color: #1abc9c;
 }
 
+/*
 .features {
   padding-top: 110px;
-}
+}*/
 
 .features-title {
   font-size: 48px;
@@ -115,7 +120,6 @@ h2::after {
   content: "";
   margin: 0 auto;
   margin-top: 32px;
-
 }
 
 .features-list {
@@ -189,7 +193,6 @@ h3.news-list-description::after {
   content: "";
   margin-top: 14px;
   margin-bottom: 30px;
-
 }
 
 .news-list-text {
@@ -198,9 +201,11 @@ h3.news-list-description::after {
   color: #555252;
   font-family: "Open Sans";
   font-weight: 400;
+  margin-bottom: 18px;
 }
 
 .read-more {
+  display: inline-block;
   border: 1px solid;
   border-radius: 1px;
   margin: 0;
@@ -211,8 +216,9 @@ h3.news-list-description::after {
   font-weight: 300;
   color: #ffffff;
   cursor: pointer;
-  text-align: center;
+  text-decoration: none;
 }
+
 
 .read {
   text-align: left;

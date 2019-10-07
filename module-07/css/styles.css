@@ -1,0 +1,85 @@
+chtml {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+body {
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+    font-family: "Roboto", sans-serif;
+    font-family: "Kaushan Script", cursive;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    list-style-type: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.page-header {
+    min-height: 65px;
+    margin-bottom: 124px;
+}
+
+.wrapper {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.page-nav {
+    justify-content: space-between;
+    display: flex;
+    padding: 28px 0;
+}
+
+.main-title {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 30px;
+    color: #95e1d3;
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+
+.site-navigation {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 484px;
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation a {
+    display: block;
+    font-size: 14px;
+    color: #95e1d3;
+    font-family: "Montserrat";
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #e5c983;
+}
