@@ -11,10 +11,8 @@ html {
 }
 
 body {
-  font-family: 'Open Sans',
-    sans-serif;
-  font-family: 'Roboto',
-    sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #515151;
   font-size: 18px;
   line-height: 32px;
@@ -245,17 +243,14 @@ h3::after {
   position: relative;
 }
 
-
 .card-overlay {
   position: absolute;
   background-color: rgba(88, 85, 85, 0.85);
   opacity: 0;
-  top: 10px;
-  left: 10px;
-  bottom: 10px;
-  right: 10px;
-  /*border: 10px solid rgba(256, 256, 256, 0.85);
-  background-clip: padding-box;*/
+  height: 280px;
+  width: 254px;
+  border: 10px solid rgba(256, 256, 256, 0.7);
+  background-clip: padding-box;
 }
 
 .overlay-icon {
@@ -278,10 +273,9 @@ h3::after {
 }
 
 .second {
-
   top: 30%;
   left: 40.1%;
-  border-color: #1abc9c;
+  border: none;
   background-color: #1abc9c;
   background-image: url("../icons/track.png");
 }
@@ -316,7 +310,6 @@ h3::after {
   font-weight: 400;
   margin: 0 auto;
   padding-left: 12px;
-
 }
 
 .card:hover .card-overlay {
