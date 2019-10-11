@@ -11,7 +11,10 @@ html {
 }
 
 body {
-  font-family: "Roboto" "Open Sans", sans-serif;
+  font-family: 'Open Sans',
+    sans-serif;
+  font-family: 'Roboto',
+    sans-serif;
   color: #515151;
   font-size: 18px;
   line-height: 32px;
@@ -98,18 +101,18 @@ img {
 .slider {
   position: relative;
   margin: auto;
-  box-shadow: #1abc9c;
 }
 
 .slider-ctrl {
   position: absolute;
   display: inline-block;
   border: none;
-  width: 104px;
-  height: 104px;
+  width: 6.5%;
+  height: 17%;
+  min-width: 104px;
   opacity: 0.8;
   background-color: #1abc9c;
-  top: 260px;
+  top: 45%;
   transform: translateY(-50%);
   z-index: 1;
   background-repeat: no-repeat;
@@ -121,12 +124,11 @@ img {
 }
 
 .slider-ctrl-prev {
-  left: 15%;
   background-image: url("../icons/left.png");
 }
 
 .slider-ctrl-next {
-  right: 15%;
+  right: 13%;
   background-image: url("../icons/right.png");
 }
 
@@ -169,7 +171,7 @@ img {
 }
 
 .slides-title {
-  top: 224px;
+  top: 37%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 740px;
@@ -183,7 +185,7 @@ img {
 }
 
 .offers {
-  top: 300px;
+  top: 50%;
   left: 41%;
   transform: translate(-50%, -50%);
   width: 460px;
@@ -211,7 +213,7 @@ img {
   margin-bottom: 92px;
 }
 
-h2::after {
+h3::after {
   display: block;
   width: 162px;
   height: 7px;
@@ -243,9 +245,6 @@ h2::after {
   position: relative;
 }
 
-.collection-list-image {
-  filter: brightness(0, 0, 55, 0.55);
-}
 
 .card-overlay {
   position: absolute;
@@ -255,6 +254,8 @@ h2::after {
   left: 10px;
   bottom: 10px;
   right: 10px;
+  /*border: 10px solid rgba(256, 256, 256, 0.85);
+  background-clip: padding-box;*/
 }
 
 .overlay-icon {
@@ -268,8 +269,8 @@ h2::after {
 }
 
 .first {
-  top: 78px;
-  left: 34px;
+  top: 30%;
+  left: 15%;
   border: 1px solid;
   border-radius: 1px;
   border-color: #ffffff;
@@ -277,16 +278,17 @@ h2::after {
 }
 
 .second {
-  top: 78px;
-  left: 93px;
+
+  top: 30%;
+  left: 40.1%;
   border-color: #1abc9c;
   background-color: #1abc9c;
   background-image: url("../icons/track.png");
 }
 
 .third {
-  top: 78px;
-  right: 34px;
+  top: 30%;
+  right: 14%;
   border: 1px solid;
   border-radius: 1px;
   border-color: #ffffff;
@@ -294,29 +296,27 @@ h2::after {
 }
 
 .fourth {
-  padding-top: 6px;
-  padding-right: 18px;
   width: 168px;
   height: 50px;
-  top: 136px;
-  left: 34px;
+  top: 52%;
+  left: 15%;
   background-color: #2e2c2c;
   opacity: 1;
   border: 1px solid;
   border-radius: 1px;
   border-color: #ffffff;
   background-image: url("../icons/curt.png");
-  background-position-x: left;
-}
-
-.words {
-  float: right;
+  background-position: 8%;
+  display: block;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   font-family: "Open Sans";
   font-weight: 400;
+  margin: 0 auto;
+  padding-left: 12px;
+
 }
 
 .card:hover .card-overlay {
