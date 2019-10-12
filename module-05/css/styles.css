@@ -247,7 +247,7 @@ h3::after {
   position: absolute;
   background-color: rgba(88, 85, 85, 0.85);
   opacity: 0;
-  height: 280px;
+  height: 100%;
   width: 254px;
   border: 10px solid rgba(256, 256, 256, 0.7);
   background-clip: padding-box;
