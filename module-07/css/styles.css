@@ -41,9 +41,11 @@ body {
   src: url("../fonts/Montserrat/Montserrat-SemiBoldItalic.ttf");
   /* IE9 Compat Modes */
   src: local("Montserrat Bold"), local("Montserrat-Bold"),
-    url("../fonts/Montserrat-700/montserrat-v14-latin-700.woff2") format("woff2"),
+    url("../fonts/Montserrat-700/montserrat-v14-latin-700.woff2")
+      format("woff2"),
     /* Super Modern Browsers */
-    url("../fonts/Montserrat-700/montserrat-v14-latin-700.woff") format("woff");
+      url("../fonts/Montserrat-700/montserrat-v14-latin-700.woff")
+      format("woff");
   /* Modern Browsers */
 }
 
@@ -239,6 +241,17 @@ textarea {
   text-transform: uppercase;
 }
 
+.contact-form textarea::placeholder,
+textarea {
+  padding-left: 20px;
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #bbbbbb;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .flex-container {
   display: flex;
   padding-top: 20px;
@@ -266,7 +279,6 @@ textarea {
 .contact-form input[type="Your E-mail"]:valid,
 .contact-form textarea[type="Your Message"]:valid {
   border-color: green;
-
 }
 
 .contact-form input[type="Your Name"]:invalid,
@@ -275,17 +287,24 @@ textarea {
   border-color: red;
 }
 
-input:valid {
+input:required:focus:valid {
   outline: 1px solid rgb(0, 256, 0);
 }
 
-input:invalid {
+input:required:focus:invalid {
   outline: 1px solid rgb(256, 0, 0);
 }
 
-input:focus {
-  border-color: none;
+textarea:required:focus:valid {
+  outline: 1px solid rgb(0, 256, 0);
 }
+
+textarea:required:focus:invalid {
+  outline: 1px solid rgb(256, 0, 0);
+}
+/* input:focus {
+  border-color: none;
+} */
 
 .flex-container {
   display: flex;
@@ -297,7 +316,6 @@ input:focus {
 textarea {
   resize: none;
 }
-
 
 .message {
   border: 1px solid;
@@ -319,3 +337,8 @@ textarea {
 .load {
   text-align: center;
 }
+
+/* textarea::placeholder {
+  color: red;
+  font-size: 16px;
+} */
