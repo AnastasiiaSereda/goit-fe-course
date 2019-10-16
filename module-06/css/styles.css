@@ -99,6 +99,34 @@ img {
   opacity: 1;
 }
 
+.title_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.service_title {
+  font-size: 30px;
+  color: #333333;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 52px;
+}
+
+.service_title span {
+  display: block;
+  font-size: 24px;
+  color: #333333;
+  font-family: "Kaushan Script";
+  font-weight: 400;
+  text-align: center;
+  text-transform: none;
+  margin-bottom: 20px;
+}
+
+
+/* 
 .workwith {
   font-size: 24px;
   color: #333333;
@@ -109,13 +137,15 @@ img {
 }
 
 h2 {
+  width: 320px;
   font-size: 30px;
   color: #333333;
   font-family: "Montserrat";
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-}
+} */
+
 
 h2::after {
   display: block;
@@ -191,6 +221,12 @@ h2::after {
 
 .service-list-title {
   margin-bottom: 20px;
+  font-size: 14px;
+  color: #333333;
+  font-family: "Montserrat";
+  font-weight: 400;
+  text-transform: uppercase;
+
 }
 
 .service-list-description {
@@ -201,13 +237,27 @@ h2::after {
   font-weight: 400;
 }
 
-.whoweare {
+
+.team_title {
+  font-size: 30px;
+  color: #333333;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 52px;
+}
+
+
+.team_title span {
+  display: block;
   font-size: 24px;
   color: #333333;
   font-family: "Kaushan Script";
   font-weight: 400;
   text-align: center;
-  margin-bottom: 22px;
+  text-transform: none;
+  margin-bottom: 20px;
 }
 
 .team {
@@ -243,12 +293,10 @@ h2::after {
   display: flex;
   position: absolute;
   width: 100%;
-  height: 470px;
-  background-image: linear-gradient(
-    to top,
-    rgba(240, 226, 144, 0.9),
-    rgba(233, 138, 137, 0.9)
-  );
+  height: 100%;
+  background-image: linear-gradient(to top,
+      rgba(240, 226, 144, 0.9),
+      rgba(233, 138, 137, 0.9));
   opacity: 0;
   visibility: hidden;
   align-items: center;
@@ -292,8 +340,8 @@ h2::after {
   align-items: center;
 }
 
-.team-list-socials li {
-  margin-right: 0;
+.team-list-socials li:not(:last-child) {
+  margin-right: 1px;
 }
 
 .team-list-socials a {
@@ -369,6 +417,11 @@ h2::after {
   align-items: center;
 }
 
+input {
+  padding-left: 12px;
+}
+
+
 .subscribe-form input::placeholder {
   font-size: 15px;
   line-height: 24px;
@@ -395,11 +448,6 @@ h2::after {
   text-transform: uppercase;
 }
 
-.sign {
-  text-align: left;
-  margin-bottom: 14px;
-  margin-top: 14px;
-}
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
