@@ -60,7 +60,6 @@ img {
 }
 .menu-list {
   list-style: none;
-  /* width: 8.75rem; */
   padding: 0;
   margin-bottom: 7.1875rem;
 }
@@ -135,7 +134,6 @@ img {
   border: 1px solid;
   border-radius: 8.75rem;
   border: #ff4e50;
-  /* width: 87%;  */
   width: 17.5rem;
   min-height: 2.5rem;
   background-color: #ff4e50;
@@ -293,11 +291,8 @@ h4 {
     min-height: 43.75rem;
   }
   .menu-list {
-    /* display: flex;
-  justify-content: space-between; */
     list-style: none;
     width: 8.75rem;
-    /* margin: 0 auto; */
     padding: 0;
     margin-bottom: auto;
   }
@@ -314,7 +309,6 @@ h4 {
   }
 
   .additional {
-    /* width: 404px; */
     margin-bottom: 20px;
     padding: 0 10px;
   }
@@ -379,13 +373,8 @@ h4 {
   }
 
   .findpartner {
-    width: 224px;
     height: 2.5rem;
     text-align: center;
-  }
-
-  .meeting-title {
-    width: 25.5rem;
   }
 
   .partners-list-item {
