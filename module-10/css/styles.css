@@ -44,16 +44,38 @@ img {
   margin-bottom: 126px;
 }
 
+@media(min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  .page-header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(bottom, rgba(240, 226, 144, .9) 0%, rgba(233, 138, 137, .9) 100%),
+      url("../img10/LayerEagle@2x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+
 .wrapper {
   width: 1182px;
   margin: 0 auto;
 }
+
 
 .page-nav {
   justify-content: space-between;
   display: flex;
   padding: 28px 0;
 }
+
+.navi {
+  display: flex;
+  width: 650px;
+  justify-content: space-between;
+}
+
 
 .main-title {
   display: inline-block;
@@ -64,11 +86,12 @@ img {
   font-weight: 700;
 }
 
+
 .site-navigation {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  width: 630px;
+  width: 500px;
   margin: 0;
   padding: 0;
 }
@@ -106,6 +129,16 @@ img {
 .site-navigation a:hover::after {
   opacity: 1;
 }
+
+.site-navigation-extra {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 90px;
+  margin: 0;
+  padding: 0;
+}
+
 
 .navigation__svg-menu-wrapper {
   width: 18px;
