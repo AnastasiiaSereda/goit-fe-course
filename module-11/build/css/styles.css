@@ -410,37 +410,37 @@ img {
 }
 
 @font-face {
-  font-family: 'MontserratR';
+  font-family: 'Montserrat';
   src: url("../fonts/montserratR.woff2") format("woff2"), url("../fonts/montserratR.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 @font-face {
-  font-family: 'MontserratB';
+  font-family: 'Montserrat';
   src: url("../fonts/montserratB.woff2") format("woff2"), url("../fonts/montserratB.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 @font-face {
-  font-family: 'Kaushan-script-v8-latin-regular';
+  font-family: 'Kaushan Script';
   src: url("../fonts/kaushan-script-v8-latin-regular.woff2") format("woff2"), url("../fonts/kaushan-script-v8-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 @font-face {
-  font-family: 'Roboto-v20-latin-300';
+  font-family: 'Roboto';
   src: url("../fonts/roboto-v20-latin-300r.woff2") format("woff2"), url("../fonts/roboto-v20-latin-300.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 @font-face {
-  font-family: 'Roboto-v20-latin-regular';
+  font-family: 'Roboto';
   src: url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"), url("../fonts/roboto-v20-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 .header {
-  background-image: linear-gradient(to top, rgba(240, 226, 144, 0.9), rgba(233, 138, 137, 0.9)), url("../img10/Layer 15@2x.jpg");
+  background-image: linear-gradient(to top, rgba(240, 226, 144, 0.9), rgba(233, 138, 137, 0.9)), url("../images/Layer 15@2x.jpg");
   min-height: 1000px;
   background-repeat: no-repeat;
   background-size: cover;
