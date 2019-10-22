@@ -5,7 +5,7 @@
 
 .team-title {
   font-size: 30px;
-  color: #333333;
+  color: $text-black-color;
   font-family: "Montserrat";
   font-weight: 700;
   text-align: center;
@@ -17,7 +17,7 @@
 .team-title span {
   display: block;
   font-size: 24px;
-  color: #333333;
+  color: $text-black-color;
   font-family: "Kaushan Script";
   font-weight: 400;
   text-align: center;
@@ -87,8 +87,8 @@
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
-  -webkit-box-shadow: 10px 10px 0 0 #95e1d3;
-  box-shadow: 10px 10px 0 0 #95e1d3;
+  -webkit-box-shadow: 10px 10px 0 0 $box-shadow-green;
+  box-shadow: 10px 10px 0 0 $box-shadow-green;
   z-index: 1;
 }
 
@@ -128,14 +128,14 @@
 
 
 .team__list-socials-item:hover .team__list-socials-svg {
-  fill: #fff;
+  fill: $title-white-color;
 }
 
 
 .team__list-socials-svg {
   width: 26px;
   height: 26px;
-  fill: #f38181;
+  fill: $main-color-header-pink;
   -webkit-transition: all .5s linear;
   -o-transition: all .5s linear;
   transition: all .5s linear;
@@ -175,7 +175,7 @@
   align-items: center;
   width: 56px;
   height: 56px;
-  background-color: #fce38a;
+  background-color: $main-color-header-yellow;
   background-repeat: no-repeat;
   background-position: center;
   -webkit-transition: background-color 0.2s linear;
@@ -192,5 +192,5 @@
 
 .team__list-socials a:hover,
 .team__list-socials a:focus {
-  background-color: #f38181;
+  background-color: $main-color-header-pink;
 }
