@@ -1,0 +1,133 @@
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 62px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top: 1px solid;
+  border-color: #e7e7e7;
+}
+
+.footer__text {
+  font-size: 14px;
+  color: #333333;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+.footer__colortext {
+  color: #f38181;
+  text-decoration: none;
+}
+
+.footer__subscribe-form input {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  min-width: 228px;
+}
+
+.footer__subscribe-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+input {
+  padding-left: 12px;
+}
+
+
+.footer__subscribe-form input::-webkit-input-placeholder {
+  font-size: 15px;
+  line-height: 24px;
+  color: #cccccc;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: italic;
+  padding-left: 12px;
+}
+
+
+.footer__subscribe-form input::-moz-placeholder {
+  font-size: 15px;
+  line-height: 24px;
+  color: #cccccc;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: italic;
+  padding-left: 12px;
+}
+
+
+.footer__subscribe-form input:-ms-input-placeholder {
+  font-size: 15px;
+  line-height: 24px;
+  color: #cccccc;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: italic;
+  padding-left: 12px;
+}
+
+
+.footer__subscribe-form input::-ms-input-placeholder {
+  font-size: 15px;
+  line-height: 24px;
+  color: #cccccc;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: italic;
+  padding-left: 12px;
+}
+
+
+.footer__subscribe-form input::placeholder {
+  font-size: 15px;
+  line-height: 24px;
+  color: #cccccc;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: italic;
+  padding-left: 12px;
+}
+
+.footer__btn {
+  border: none;
+  border-radius: 1px;
+  margin: 0;
+  padding: 16px 32px;
+  background-color: #95e1d3;
+  line-height: 16px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

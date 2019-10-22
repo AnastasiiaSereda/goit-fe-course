@@ -1,0 +1,203 @@
+.header {
+  background-image: -webkit-gradient(linear,
+      left bottom, left top,
+      from(rgba(240, 226, 144, 0.9)),
+      to(rgba(233, 138, 137, 0.9))),
+    url("../img10/Layer\ 15@2x.jpg");
+  background-image: -o-linear-gradient(bottom,
+      rgba(240, 226, 144, 0.9),
+      rgba(233, 138, 137, 0.9)),
+    url("../img10/Layer\ 15@2x.jpg");
+  background-image: linear-gradient(to top,
+      rgba(240, 226, 144, 0.9),
+      rgba(233, 138, 137, 0.9)),
+    url("../img10/Layer\ 15@2x.jpg");
+  min-height: 1000px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 126px;
+}
+
+
+// @media(min-device-pixel-ratio: 2),
+// (-webkit-min-device-pixel-ratio: 2),
+// (-o-min-device-pixel-ratio: 2/1),
+// (min-resolution: 192dpi) {
+//   .header {
+//     width: 100%;
+//     height: 100vh;
+//     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(240, 226, 144, .9)), to(rgba(233, 138, 137, .9))),
+//       url("../img10/LayerEagle@2x.jpg");
+//     background-image: -o-linear-gradient(bottom, rgba(240, 226, 144, .9) 0%, rgba(233, 138, 137, .9) 100%),
+//       url("../img10/LayerEagle@2x.jpg");
+//     background-image: linear-gradient(bottom, rgba(240, 226, 144, .9) 0%, rgba(233, 138, 137, .9) 100%),
+//       url("../img10/LayerEagle@2x.jpg");
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//   }
+// }
+
+
+.wrapper {
+  width: 1182px;
+  margin: 0 auto;
+}
+
+.navigation {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 28px 0;
+}
+
+.navigation-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 650px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+
+.navigation__main-title {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+
+.navigation__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  list-style: none;
+  width: 500px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation__menu a {
+  display: block;
+  font-size: 14px;
+  color: white;
+  font-family: "Montserrat";
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.navigation__menu a:hover,
+.navigation__menu a:focus {
+  color: #fce38a;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.navigation__menu a::after {
+  display: block;
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: #fce38a;
+  margin: 0 auto;
+  margin-top: 12px;
+  opacity: 0;
+  -webkit-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+
+.navigation__menu a:hover::after {
+  opacity: 1;
+}
+
+.navigation__extra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  list-style: none;
+  width: 90px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.navigation__extra-svg-link:hover .navigation__extra-svg {
+  fill: #fce38a;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.navigation__extra-svg {
+  width: 18px;
+  height: 18px;
+  fill: #fff;
+}
+
+.header__main-title span {
+  display: block;
+  font-size: 72px;
+  color: #ffffff;
+  font-family: "Kaushan Script";
+  font-weight: 400;
+  text-align: center;
+}
+
+h1 {
+  font-size: 150px;
+  line-height: 140px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+}
+
+
+.header__title_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.header__link-more {
+  border: 1px solid;
+  width: 160px;
+  min-height: 36px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  text-decoration: none;
+  padding-top: 10px;
+  background-color: transparent;
+  border-color: white;
+  margin-bottom: 230px;
+}
