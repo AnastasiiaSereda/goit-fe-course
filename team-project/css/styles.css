@@ -138,7 +138,6 @@ img {
   font-family: "HelveticaBd";
   color: #ffffff;
   text-align: center;
-  /* padding-bottom: 30px; */
 }
 
 .header__link-more::after {
@@ -148,10 +147,6 @@ img {
   background-color: #7ab4fb;
   content: "";
   margin: 0 auto;
-}
-
-.header__svg-kids {
-  /* padding-top: 20px; */
 }
 
 .why-it__main-title {
@@ -257,13 +252,59 @@ img {
   color: #2c2c2c;
   font-family: "HelveticaR";
 }
-/* 
+
 @media screen and (min-width: 710px) {
   .container {
     width: 710px;
+  }
+  .header {
+    background-image: url("../images/header-backgr-tablet.jpg");
+    min-height: 740px;
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .why-it__background2 {
+    background-image: url("../images/section-2-backgr-tablet.jpg");
+    min-height: 1284px;
   }
 
   .navigation__list-displaynone {
     display: block;
   }
-} */
+
+  .navigation {
+    justify-content: space-between;
+    display: flex;
+    padding: 28px 0;
+  }
+  .navigation__list {
+    display: flex;
+    width: 402px;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  .container {
+    width: 1420px;
+  }
+
+  .header {
+    background-image: url("../images/header-backgr-desktop.jpg");
+    min-height: 1230px;
+    width: 1920px;
+    /* margin: 0 auto; */
+  }
+
+  .navigation__list {
+    /* display: flex; */
+    width: 600px;
+    /* justify-content: space-between; */
+  }
+
+  .why-it__background2 {
+    background-image: url("../images/section-2-backgr-desktop.jpg");
+    min-height: 770px;
+  }
+}
