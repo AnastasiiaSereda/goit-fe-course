@@ -91,6 +91,7 @@ img {
   min-height: 450px;
   width: 320px;
   margin: 0 auto;
+  /* position: relative; */
 }
 
 .container {
@@ -148,6 +149,20 @@ img {
   content: "";
   margin: 0 auto;
 }
+/* 
+&::after {
+  content: ‘’;
+  position: absolute;
+  width: 710px;
+  height: 335px;
+  background: url(../images/kids.svg#kids);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+} */
 
 .why-it__main-title {
   font-size: 20px;
@@ -259,7 +274,7 @@ img {
   }
   .header {
     background-image: url("../images/header-backgr-tablet.jpg");
-    min-height: 740px;
+    min-height: 540px;
     width: 768px;
     margin: 0 auto;
   }
@@ -283,8 +298,74 @@ img {
     width: 402px;
     justify-content: space-between;
   }
-}
+  .navigation__list a {
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 59px;
+    color: #ffffff;
+    font-family: "HelveticaM";
+  }
 
+  .navigation__list-item {
+    list-style-type: none;
+  }
+
+  .header__main-title {
+    width: 440px;
+  }
+  .header__subtitle {
+    width: 470px;
+    font-size: 35px;
+    line-height: 42px;
+    font-family: "HelveticaBd";
+  }
+  .header__svg-kids-wrapper {
+    padding-top: 20px;
+    /* margin: 0 auto; */
+    padding-bottom: 50px;
+  }
+  .header__svg-kids {
+    width: 700px;
+    height: 400px;
+  }
+
+  .why-it__main-title {
+    width: 426px;
+    padding-top: 80px;
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .why-it__background1 {
+    min-height: 520px;
+    width: 710px;
+  }
+  .why-it__image-first {
+    width: 186px;
+    height: 186px;
+    top: 80%;
+    left: 10%;
+  }
+
+  .why-it__image-second {
+    width: 266px;
+    height: 266px;
+  }
+
+  .why-it__title-subtitle {
+    width: 500px;
+    font-size: 60px;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+
+  .why-it__title {
+    width: 330px;
+    font-size: 20px;
+    padding-top: 30px;
+    margin: 0 auto;
+  }
+}
+/* 
 @media screen and (min-width: 1460px) {
   .container {
     width: 1420px;
@@ -294,17 +375,16 @@ img {
     background-image: url("../images/header-backgr-desktop.jpg");
     min-height: 1230px;
     width: 1920px;
-    /* margin: 0 auto; */
+  
   }
 
   .navigation__list {
-    /* display: flex; */
     width: 600px;
-    /* justify-content: space-between; */
+    
   }
 
   .why-it__background2 {
     background-image: url("../images/section-2-backgr-desktop.jpg");
     min-height: 770px;
   }
-}
+}  */
