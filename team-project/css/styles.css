@@ -89,8 +89,6 @@ img {
   background-size: cover;
   background-position: center;
   min-height: 450px;
-  width: 320px;
-  margin: 0 auto;
   /* position: relative; */
 }
 
@@ -247,12 +245,42 @@ img {
 .why-it__partners-list-item {
   width: 190px;
   margin: 0 auto;
-  margin-bottom: 36px;
 }
 
 .why-it__partners-list-image {
   margin: 0 auto;
 }
+
+.why-it__partners-list-description {
+  padding-bottom: 36px;
+}
+
+/* .icons::before {
+  content: "";
+  display: block;
+  width: 136px;
+  height: 136px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 10px;
+  left: 25px;
+}
+
+.icon-first::before {
+  background-image: url("../images/first.png");
+}
+
+.icon-second::before {
+  background-image: url("../images/second.png");
+}
+
+.icon-third::before {
+  background-image: url("../images/third.png");
+}
+
+.icon-fourth::before {
+  background-image: url("../images/fourth.png");
+} */
 
 .why-it__partners-list-name {
   font-size: 20px;
@@ -275,8 +303,6 @@ img {
   .header {
     background-image: url("../images/header-backgr-tablet.jpg");
     min-height: 540px;
-    width: 768px;
-    margin: 0 auto;
   }
 
   .why-it__background2 {
@@ -321,7 +347,6 @@ img {
   }
   .header__svg-kids-wrapper {
     padding-top: 20px;
-    /* margin: 0 auto; */
     padding-bottom: 50px;
   }
   .header__svg-kids {
@@ -363,28 +388,148 @@ img {
     font-size: 20px;
     padding-top: 30px;
     margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  /* .why-it__partners-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+  }   */
+
+  .why-it__partners-list-image {
+    min-width: 220px;
+    min-height: 220px;
+  }
+
+  /* .why-it__partners-list-item {
+    flex-basis: 500px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding-left: 200px;
+    top: 40px;
+  } */
+
+  /* .icons {
+    top: 50px;
+  } */
+
+  .why-it__partners-list-name::before {
+    background-image: url("../images/arrow2.png"), url("../images/arrow1.png");
+    display: block;
+    content: "";
+    width: 60px;
+    height: 50px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -80px;
+    top: 2px;
+  }
+
+  .why-it__partners-list-name {
+    font-size: 26px;
+    position: relative;
+  }
+
+  .why-it__partners-list-description {
+    font-size: 23px;
+    line-height: 35px;
+    width: 240px;
+    text-align: left;
+    padding: 0;
+  }
+  .why-it__partners-list-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .why-it__partners-list-item {
+    display: flex;
+    width: 540px;
+    justify-content: space-between;
+    text-align: left;
+    padding-top: 60px;
+  }
+
+  .why-it__partners-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1120px;
   }
 }
-/* 
-@media screen and (min-width: 1460px) {
+
+@media screen and (min-width: 1440px) {
   .container {
     width: 1420px;
   }
 
   .header {
     background-image: url("../images/header-backgr-desktop.jpg");
-    min-height: 1230px;
-    width: 1920px;
-  
+    /* min-height: 1230px; */
+    /* min-width: 1420px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
   .navigation__list {
     width: 600px;
-    
+  }
+
+  .header__main-title {
+    font-size: 36px;
+    letter-spacing: 1px;
+    line-height: 15px;
+    width: 810px;
+  }
+  .header__subtitle {
+    font-size: 60px;
+    line-height: 90px;
+    letter-spacing: 2px;
+    width: 1230px;
+  }
+
+  .why-it__main-title {
+    align-items: flex-start;
+  }
+
+  .why-it__text-image-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: 0 auto;
   }
 
   .why-it__background2 {
     background-image: url("../images/section-2-backgr-desktop.jpg");
     min-height: 770px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
-}  */
+
+  .why-it__partners-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .why-it__partners-list-item {
+    width: 600px;
+    margin: 0;
+  }
+  .why-it__image-wrapper {
+    margin: 0;
+  }
+
+  .why-it__image-first {
+    top: 44%;
+    left: 22%;
+  }
+}
