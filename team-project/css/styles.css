@@ -211,7 +211,7 @@ img {
   background-size: cover;
   background-position: center;
   min-height: 240px;
-  animation: bounceIn 8s ease-in-out 3s infinite;
+  animation: bounceIn 7s ease-in-out 5s infinite;
 }
 
 .why-it__image-wrapper {
@@ -387,11 +387,12 @@ img {
 
   .header__svg-kids-wrapper {
     padding-bottom: 50px;
+    animation: bounceIn 2s ease-in-out 3s 3 alternate;
   }
 
   .header__svg-kids {
-    width: 700px;
-    height: 400px;
+    width: 500px;
+    height: 300px;
   }
 
   /*   WHY-IT  SECTION  TABLET  */
@@ -636,19 +637,19 @@ img {
   }
 
   10% {
-    margin-left: -4.5em;
+    margin-left: -3.5em;
   }
 
   20% {
-    margin-left: -5.5em;
+    margin-left: -4.5em;
   }
 
   30% {
-    margin-left: -6em;
+    margin-left: -5em;
   }
 
   40% {
-    margin-left: -4.5em;
+    margin-left: -3.5em;
   }
 
   50% {
@@ -656,7 +657,7 @@ img {
     bottom: 75%;
     width: 5em;
     height: 5em;
-    margin-left: -2.5em;
+    margin-left: -1.5em;
   }
 
   60% {
@@ -676,7 +677,7 @@ img {
   }
 
   100% {
-    left: 98%;
+    left: 60%;
     margin-left: -2.5em;
   }
 }
