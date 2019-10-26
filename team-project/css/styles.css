@@ -103,9 +103,43 @@ img {
   min-height: 450px;
 }
 
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.navigation__logotype-link {
+  animation: bounceIn 2s;
+}
+
 .header__title_wrapper {
   display: flex;
   justify-content: center;
+}
+
+@keyframes pulse-text {
+  0% {
+    color: white;
+  }
+
+  50% {
+    color: #f1ed74;
+  }
+
+  100% {
+    color: white;
+  }
 }
 
 .header__main-title {
@@ -118,6 +152,7 @@ img {
   width: 180px;
   margin: 0 auto;
   padding-top: 76px;
+  animation: pulse-text 4s infinite;
 }
 
 .header__subtitle {
@@ -135,6 +170,11 @@ img {
   font-family: "HelveticaBd";
   color: #ffffff;
   text-align: center;
+  animation: pulse-text 4s infinite;
+}
+
+.header__svg-kids-wrapper {
+  animation: bounceIn 2s ease-in-out 3s 2 alternate;
 }
 
 .header__link-more::after {
@@ -170,6 +210,7 @@ img {
   background-size: cover;
   background-position: center;
   min-height: 240px;
+  animation: bounceIn 8s ease-in-out 3s infinite;
 }
 
 .why-it__image-wrapper {
@@ -184,12 +225,14 @@ img {
   z-index: 1;
   top: 44%;
   left: 24%;
+  animation: picture-move 9s infinite linear alternate-reverse;
 }
 
 .why-it__image-second {
   position: absolute;
   top: 20%;
   left: 36%;
+  animation: picture-move 9s infinite linear;
 }
 
 .why-it__background2 {
@@ -213,7 +256,7 @@ img {
   color: black;
   font-family: "Oswald";
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 
@@ -252,7 +295,7 @@ img {
   margin-bottom: 20px;
 }
 
-/*       MEDIA   TABLET    */
+/*     MEDIA   TABLET    */
 
 @media screen and (min-width: 710px) {
   .container {
@@ -465,6 +508,7 @@ img {
     font-size: 23px;
     letter-spacing: 1px;
     line-height: 59px;
+    animation: bounceIn 2s ease-in-out 3s 3 alternate;
   }
 
   .navigation__list {
@@ -483,6 +527,10 @@ img {
   .header__link-more {
     font-size: 30px;
     letter-spacing: 2px;
+  }
+
+  .header__svg-kids-wrapper {
+    animation: bounceIn 2s ease-in-out 3s 2 alternate;
   }
 
   .header__main-title {
@@ -522,29 +570,104 @@ img {
   .why-it__image-first {
     top: 44%;
     left: 22%;
+    animation: picture-move 9s infinite linear alternate-reverse;
+  }
+}
+
+@keyframes picture-move {
+  0% {
   }
 
-  .why-it__background2 {
-    background-image: url("../images/section-2-backgr-desktop.jpg");
-    min-height: 770px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom center;
+  10% {
+    margin-left: -4.5em;
   }
 
-  .why-it__partners-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0 auto;
-    height: auto;
-    padding-bottom: 60px;
+  20% {
+    margin-left: -5.5em;
   }
 
-  .why-it__partners-list-item {
-    width: 600px;
-    margin: 0;
-    margin-top: 40px;
+  30% {
+    margin-left: -6em;
   }
+
+  40% {
+    margin-left: -4.5em;
+  }
+
+  50% {
+    left: 50%;
+    bottom: 75%;
+    width: 5em;
+    height: 5em;
+    margin-left: -2.5em;
+  }
+
+  60% {
+    margin-left: 1.5em;
+  }
+
+  70% {
+    margin-left: 3.5em;
+  }
+
+  80% {
+    margin-left: 2.5em;
+  }
+
+  90% {
+    margin-left: 1em;
+  }
+
+  100% {
+    left: 98%;
+    margin-left: -2.5em;
+  }
+}
+
+.why-it__image-second {
+  animation: picture-move 9s infinite linear;
+}
+
+.why-it__background2 {
+  background-image: url("../images/section-2-backgr-desktop.jpg");
+  min-height: 770px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom center;
+}
+
+.why-it__partners-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  height: auto;
+  padding-bottom: 60px;
+}
+
+.why-it__partners-list-item {
+  width: 600px;
+  margin: 0;
+  margin-top: 40px;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(167, 44, 204, 0.4);
+  }
+
+  70% {
+    box-shadow: 0 0 0 26px rgba(165, 44, 204, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(142, 23, 153, 0);
+  }
+}
+
+.why-it__partners-list-image {
+  border-radius: 50%;
+  box-shadow: 0 0 0 rgba(83, 25, 158, 0.4);
+  animation: pulse 2s infinite;
 }
