@@ -23,8 +23,8 @@ body {
   font-style: normal;
   font-weight: 900;
   src: local("Helvetica Neue"), local("Helvetica Neue"),
-    url("/src/fonts/HelveticaNeueCyr-Black.woff") format("woff"),
-    url("/src/fonts/HelveticaNeueCyr-Black.woff2") format("woff2");
+    url("../fonts/HelveticaNeueCyr-Black.woff") format("woff"),
+    url("../fonts/HelveticaNeueCyr-Black.woff2") format("woff2");
 }
 
 @font-face {
@@ -32,8 +32,8 @@ body {
   font-style: normal;
   font-weight: 700;
   src: local("Helvetica Neue"), local("Helvetica Neue"),
-    url("/src/fonts/HelveticaNeueCyr-Bold.woff") format("woff"),
-    url("/src/fonts/HelveticaNeueCyr-Black.woff2") format("woff2");
+    url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff"),
+    url("../fonts/HelveticaNeueCyr-Black.woff2") format("woff2");
 }
 
 @font-face {
@@ -41,8 +41,8 @@ body {
   font-style: normal;
   font-weight: 500;
   src: local("Helvetica Neue"), local("Helvetica Neue"),
-    url("/src/fonts/HelveticaNeueCyr-Medium.woff") format("woff"),
-    url("/src/fonts/HelveticaNeueCyr-Medium.woff2") format("woff2");
+    url("../fonts/HelveticaNeueCyr-Medium.woff") format("woff"),
+    url("../fonts/HelveticaNeueCyr-Medium.woff2") format("woff2");
 }
 
 @font-face {
@@ -50,8 +50,8 @@ body {
   font-style: normal;
   font-weight: 400;
   src: local("Helvetica Neue"), local("Helvetica Neue"),
-    url("/src/fonts/HelveticaNeueCyr-Roman.woff") format("woff"),
-    url("/src/fonts/HelveticaNeueCyr-Roman.woff2") format("woff2");
+    url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff"),
+    url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2");
 }
 
 @font-face {
@@ -59,8 +59,8 @@ body {
   font-style: normal;
   font-weight: 400;
   src: local("Mistral"), local("Mistral"),
-    url("/src/fonts/Mistral.woff") format("woff"),
-    url("/src/fonts/Mistral.woff2") format("woff2");
+    url("../fonts/Mistral.woff") format("woff"),
+    url("../fonts/Mistral.woff2") format("woff2");
 }
 
 @font-face {
@@ -68,8 +68,8 @@ body {
   font-style: normal;
   font-weight: 700;
   src: local("Oswald"), local("Oswald"),
-    url("/src/fonts/Oswald-Bold.woff") format("woff"),
-    url("/src/fonts/Oswald-Bold.woff2") format("woff2");
+    url("../fonts/Oswald-Bold.woff") format("woff"),
+    url("../fonts/Oswald-Bold.woff2") format("woff2");
 }
 
 img {
@@ -148,10 +148,10 @@ img {
   color: #ffffff;
   font-family: "HelveticaR";
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 48px;
   width: 180px;
   margin: 0 auto;
-  padding-top: 76px;
+  padding-top: 82px;
   animation: pulse-text 3s infinite;
 }
 
@@ -159,8 +159,8 @@ img {
   font-size: 20px;
   line-height: 26px;
   font-family: "HelveticaBl";
-  padding-bottom: 32px;
-  width: 260px;
+  padding-bottom: 46px;
+  width: 270px;
   margin: 0 auto;
 }
 
@@ -174,12 +174,13 @@ img {
 }
 
 .header__svg-kids-wrapper {
+  padding-top: 26px;
   animation: bounceIn 2s ease-in-out 3s 3 alternate;
 }
 
 .header__link-more::after {
   display: block;
-  width: 96px;
+  width: 112px;
   height: 3px;
   background-color: #7ab4fb;
   content: "";
@@ -239,7 +240,7 @@ img {
   background-image: url("../images/section-2-backgr.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: bottom center;
+  background-position: center;
   min-height: 1400px;
 }
 
@@ -324,6 +325,7 @@ img {
     display: flex;
     width: 402px;
     justify-content: space-between;
+    font-family: "HelveticaM";
   }
 
   .navigation__list a {
@@ -359,9 +361,12 @@ img {
     font-family: "HelveticaBd";
   }
 
+  .header__link-more::after {
+    width: 110px;
+  }
+
   .header__svg-kids-wrapper {
-    padding-top: 20px;
-    /* padding-bottom: 50px; */
+    padding-bottom: 50px;
   }
 
   .header__svg-kids {
@@ -373,7 +378,6 @@ img {
 
   .why-it__main-title {
     width: 426px;
-    /* padding-top: 80px; */
     font-size: 35px;
     line-height: 45px;
   }
@@ -391,6 +395,7 @@ img {
     padding-top: 30px;
     margin: 0 auto;
     margin-bottom: 50px;
+    margin-top: 10px;
   }
 
   .why-it__background1 {
@@ -491,13 +496,21 @@ img {
   .navigation__list a::after {
     display: block;
     content: "";
-    width: 120px;
+    width: 130px;
     height: 2px;
     background-color: #fcbf2c;
     margin: 0 auto;
-    margin-top: 1px;
+    margin-top: -14px;
     opacity: 0;
     transition: background-color 0.2s linear;
+  }
+
+  .navigation__list a {
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 59px;
+    color: #ffffff;
+    font-family: "HelveticaM";
   }
 
   .navigation__list a:hover::after {
@@ -524,9 +537,22 @@ img {
     background-position: top center;
   }
 
+  .header__main-title {
+    margin-bottom: 30px;
+    margin-top: 28px;
+  }
+
+  .header__subtitle {
+    margin-bottom: 50px;
+  }
+
   .header__link-more {
     font-size: 30px;
     letter-spacing: 2px;
+  }
+  .header__svg-kids {
+    width: 900px;
+    height: 600px;
   }
 
   .header__svg-kids-wrapper {
@@ -551,7 +577,7 @@ img {
 
   .header__link-more::after {
     display: block;
-    width: 176px;
+    width: 200px;
     height: 3px;
   }
 
