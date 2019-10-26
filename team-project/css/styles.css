@@ -134,7 +134,7 @@ img {
   }
 
   50% {
-    color: #f1ed74;
+    color: yellow;
   }
 
   100% {
@@ -152,7 +152,7 @@ img {
   width: 180px;
   margin: 0 auto;
   padding-top: 76px;
-  animation: pulse-text 4s infinite;
+  animation: pulse-text 3s infinite;
 }
 
 .header__subtitle {
@@ -170,11 +170,11 @@ img {
   font-family: "HelveticaBd";
   color: #ffffff;
   text-align: center;
-  animation: pulse-text 4s infinite;
+  animation: pulse-text 3s infinite;
 }
 
 .header__svg-kids-wrapper {
-  animation: bounceIn 2s ease-in-out 3s 2 alternate;
+  animation: bounceIn 2s ease-in-out 3s 3 alternate;
 }
 
 .header__link-more::after {
@@ -530,7 +530,7 @@ img {
   }
 
   .header__svg-kids-wrapper {
-    animation: bounceIn 2s ease-in-out 3s 2 alternate;
+    animation: bounceIn 2s ease-in-out 3s 3 alternate;
   }
 
   .header__main-title {
