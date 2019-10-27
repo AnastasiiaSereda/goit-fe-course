@@ -182,7 +182,7 @@ img {
 
 .header__svg-kids-wrapper {
   padding-top: 24px;
-  animation: bounceIn 3s ease-in-out 3s 1 alternate;
+  animation: bounceIn 3s ease-in-out 3s 2 alternate;
 }
 
 .header__link-more::after {
@@ -405,6 +405,30 @@ img {
   font-family: "HelveticaR";
   margin-bottom: 20px;
 }
+
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(167, 44, 204, 0.4);
+  }
+
+  70% {
+    box-shadow: 0 0 0 16px rgba(165, 44, 204, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(142, 23, 153, 0);
+  }
+}
+
+.why-it__partners-list-image {
+  border-radius: 50%;
+  box-shadow: 0 0 0 rgba(83, 25, 158, 0.4);
+  animation: pulse 2s infinite;
+}
+
+
+
 
 /*     MEDIA   TABLET    */
 
