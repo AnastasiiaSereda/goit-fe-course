@@ -195,7 +195,6 @@ img {
 }
 
 
-
 .circle {
   position: absolute;
   border-radius: 50%;
@@ -289,6 +288,7 @@ img {
   width: 250px;
   text-align: center;
   margin: 0 auto;
+  padding-top: 10px;
 }
 
 .why-it__main-title-colortext {
@@ -349,6 +349,7 @@ img {
   font-family: "Oswald";
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 70px;
 }
 
 .why-it__title span {
@@ -359,7 +360,7 @@ img {
   padding: 0;
   list-style: none;
   padding-top: 12px;
-  padding-bottom: 20px;
+  padding-bottom: 70px;
 }
 
 .why-it__partners-list-item {
