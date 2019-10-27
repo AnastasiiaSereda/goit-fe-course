@@ -175,7 +175,7 @@ img {
 
 
 .header__svg-kids-wrapper {
-  padding-top: 10px;
+  padding-top: 24px;
   animation: bounceIn 2s ease-in-out 3s 3 alternate;
 }
 
@@ -589,7 +589,9 @@ img {
     height: 500px;
   }
 
+
   .header__svg-kids-wrapper {
+    padding-top: 0px;
     animation: bounceIn 2s ease-in-out 3s 3 alternate;
   }
 
