@@ -173,8 +173,9 @@ img {
   animation: pulse-text 3s infinite;
 }
 
+
 .header__svg-kids-wrapper {
-  padding-top: 26px;
+  padding-top: 10px;
   animation: bounceIn 2s ease-in-out 3s 3 alternate;
 }
 
@@ -211,7 +212,7 @@ img {
   background-size: cover;
   background-position: center;
   min-height: 240px;
-  animation: bounceIn 7s ease-in-out 5s infinite;
+  animation: bounceIn 8s ease-in-out 8s infinite;
 }
 
 .why-it__image-wrapper {
@@ -257,7 +258,6 @@ img {
   color: black;
   font-family: "Oswald";
   font-weight: 700;
-  margin-bottom: 20px;
   text-transform: uppercase;
 }
 
@@ -268,7 +268,7 @@ img {
 .why-it__partners-list {
   padding: 0;
   list-style: none;
-  padding-top: 24px;
+  padding-top: 12px;
   padding-bottom: 20px;
 }
 
@@ -489,6 +489,7 @@ img {
     display: flex;
     flex-direction: column-reverse;
   }
+
   .why-it__partners-list-item {
     display: flex;
     width: 540px;
@@ -582,9 +583,10 @@ img {
     font-size: 30px;
     letter-spacing: 2px;
   }
+
   .header__svg-kids {
     width: 900px;
-    height: 600px;
+    height: 500px;
   }
 
   .header__svg-kids-wrapper {
@@ -621,6 +623,7 @@ img {
     justify-content: center;
     margin: 0 auto;
   }
+
   .why-it__image-wrapper {
     margin: 0;
   }
@@ -633,8 +636,7 @@ img {
 }
 
 @keyframes picture-move {
-  0% {
-  }
+  0% {}
 
   10% {
     margin-left: -3.5em;
@@ -646,6 +648,9 @@ img {
 
   30% {
     margin-left: -5em;
+    width: 8em;
+    height: 8em;
+
   }
 
   40% {
@@ -655,8 +660,8 @@ img {
   50% {
     left: 50%;
     bottom: 75%;
-    width: 5em;
-    height: 5em;
+    width: 9em;
+    height: 9em;
     margin-left: -1.5em;
   }
 
@@ -666,6 +671,8 @@ img {
 
   70% {
     margin-left: 3.5em;
+    width: 7em;
+    height: 7em;
   }
 
   80% {
