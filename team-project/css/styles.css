@@ -16,7 +16,6 @@ body {
   color: #ffffff;
   font-family: "HelveticaR";
   text-align: center;
-
 }
 
 @font-face {
@@ -96,18 +95,13 @@ img {
 
 /*  HEADER MOBILE  */
 
-
-
-
 .header {
   background-image: url("../images/header-backgr.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top center;
   min-height: 450px;
-
 }
-
 
 @keyframes bounceIn {
   0% {
@@ -179,7 +173,6 @@ img {
   animation: pulse-text 3s infinite;
 }
 
-
 .header__svg-kids-wrapper {
   padding-top: 24px;
   animation: bounceIn 3s ease-in-out 3s 2 alternate;
@@ -193,7 +186,6 @@ img {
   content: "";
   margin: 0 auto;
 }
-
 
 .circle {
   position: absolute;
@@ -270,12 +262,7 @@ img {
   100% {
     transform: scale(0.8);
   }
-
 }
-
-
-
-
 
 /*     WHY-IT SECTION  MOBILE     */
 
@@ -332,7 +319,7 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom center;
-  min-height: 1400px;
+  min-height: 1300px;
 }
 
 .why-it__title-subtitle {
@@ -349,7 +336,7 @@ img {
   font-family: "Oswald";
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 
 .why-it__title span {
@@ -360,7 +347,7 @@ img {
   padding: 0;
   list-style: none;
   padding-top: 12px;
-  padding-bottom: 70px;
+  padding-bottom: 60px;
 }
 
 .why-it__partners-list-item {
@@ -407,7 +394,6 @@ img {
   margin-bottom: 20px;
 }
 
-
 @keyframes pulse {
   0% {
     box-shadow: 0 0 0 0 rgba(167, 44, 204, 0.4);
@@ -427,9 +413,6 @@ img {
   box-shadow: 0 0 0 rgba(83, 25, 158, 0.4);
   animation: pulse 2s infinite;
 }
-
-
-
 
 /*     MEDIA   TABLET    */
 
@@ -704,7 +687,6 @@ img {
     height: 500px;
   }
 
-
   .header__svg-kids-wrapper {
     padding-top: 0px;
     animation: bounceIn 3s ease-in-out 3s 1 alternate;
@@ -807,9 +789,7 @@ img {
     100% {
       transform: scale(0.8);
     }
-
   }
-
 
   /*   WHY-IT SECTION DESKTOP   */
 
@@ -830,9 +810,9 @@ img {
     animation: picture-move 9s infinite linear alternate-reverse;
   }
 
-
   @keyframes picture-move {
-    0% {}
+    0% {
+    }
 
     10% {
       margin-left: -3.5em;
@@ -846,7 +826,6 @@ img {
       margin-left: -5em;
       width: 8em;
       height: 8em;
-
     }
 
     40% {
@@ -887,7 +866,6 @@ img {
 
   .why-it__image-second {
     animation: picture-move 9s infinite linear;
-
   }
 
   .why-it__background2 {
@@ -933,7 +911,6 @@ img {
     box-shadow: 0 0 0 rgba(83, 25, 158, 0.4);
     animation: pulse 2s infinite;
   }
-
 }
 
 /*  MIXIN */
